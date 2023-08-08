@@ -5,7 +5,11 @@ class ItemsController < ApplicationController
   end
 
   def create
+    @list = List.find(params[:list_id])
 
+    if @item = @list.items.create(item_params)
+      retrieve_all_items(list_id: @list.id)
+    end
   end
 
   def show

@@ -1,6 +1,6 @@
 development:
   username: root
-  password: password
+  # password: ''
   adapter: mysql2
   encoding: utf8
   database: tdlist-app_rails_development
@@ -12,7 +12,7 @@ development:
 
 test:
   username: root
-  password: password
+  # password: ''
   adapter: mysql2
   encoding: utf8
   database: tdlist-app_rails_test
